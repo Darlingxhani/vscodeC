@@ -47,7 +47,7 @@ void rc4_crypt(unsigned char *Data, unsigned long Len_D, unsigned char *key, uns
         Data[k] = Data[k] ^ s[t];
     }
 }
-void main()
+int main()
 {
     // 字符串密钥
     unsigned char key[] = "moectf2023";
@@ -104,5 +104,5 @@ void main()
         printf("%c", data[i]);
     }
     printf("\n");
-    return;
+    return 0;
 }
